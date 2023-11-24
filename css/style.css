@@ -11,6 +11,7 @@ a {
     color: black;
 }
 
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -18,28 +19,45 @@ header nav {
 
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
 
 .navbar {
     padding-right: 40px;
     justify-content: right;
     list-style: none;
-    padding-top: 40px;
+    padding-top: 30px;
 
 
 }
 
 .headline {
-    background-color: #d9d9d9;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .headline h1 {
-    display: flex;
     justify-content: center;
+    padding-top: 2rem;
 
+}
+
+.lore {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#video {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
 }
 
 .portline {
@@ -90,11 +108,38 @@ header nav {
     padding-right: 3rem;
 }
 
-#more {
+.compan {
+    display: flex;
+    background-image: url(../media/von1.jpg);
+
+}
+
+.empty {
+    flex: 1.2;
+}
+
+.compan1 {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    opacity: 70%;
+    flex: 1;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+.more {
     border: 3px solid;
     padding: 10px;
     width: fit-content;
     font-weight: bold;
+}
+
+.more1 {
+    border: 3px solid;
+    padding: 10px;
+    font-weight: bold;
+    max-width: fit-content;
 }
 
 .service {
@@ -159,10 +204,84 @@ hr {
 }
 
 
-.harum {
+.client {
+    background-color: #e6bc44;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.client img {
+    width: 15%;
+    padding-right: 2rem;
+}
+
+#c-top {
+    text-align: center;
+    background-color: #efefef;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+
+#contacttop {
     display: flex;
-    flex-direction: row;
-    gap: 120px;
+    background-color: #efefef;
+}
+
+.contact1 {
+    flex: 1;
+    padding: 1rem;
+}
+
+.contact2 {
+    flex: 1;
+    padding: 1rem;
+}
+
+.in1 {
+    border: none;
+    height: 25px;
+}
+
+#in2 {
+    border: none;
+    height: 100px;
+    width: 250px;
+}
+
+.btn1 {
+    background-color: #e6bc44;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn1:hover {
+    color: #e6bc44;
+    background-color: black;
+}
+
+.btn2 {
+    background-color: #e6bc44;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+
+}
+
+.btn2:hover {
+    color: #e6bc44;
+    background-color: black;
+}
+
+#post {
+    text-decoration: underline;
+    color: blue;
 }
 
 /* Footer */
@@ -175,7 +294,7 @@ hr {
     padding: 3rem;
 }
 
-#inputs {
+.inputs {
     border: none;
     height: 40px;
     margin-bottom: 1rem;
@@ -194,6 +313,10 @@ hr {
     color: white;
     text-align: center;
     padding: 3rem;
+}
+
+#map {
+    width: 100%;
 }
 
 /* Media qurues */
