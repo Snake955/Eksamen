@@ -1,3 +1,7 @@
+body {
+    font-family: "Open sans", sans-serif;
+}
+
 header,
 main,
 footer {
@@ -22,15 +26,12 @@ header nav {
 .logo {
     display: flex;
     justify-content: center;
+    height: 75px;
 }
 
 .navbar {
-    padding-right: 40px;
     justify-content: right;
     list-style: none;
-    padding-top: 30px;
-
-
 }
 
 .headline {
@@ -61,14 +62,28 @@ header nav {
 }
 
 .portline {
-    display: flex;
-    justify-content: center;
-    border: 2px solid;
-    background-image: url('../bilder/von1.jpg');
+    text-align: center;
+    background-image: url('../media/von1.jpg');
     background-size: cover;
-    padding: 10px;
-    width: 1000px;
-    height: 100px;
+    height: 250px;
+    position: relative;
+}
+
+
+.portline h1 {
+    padding-top: 100px;
+    font-size: 45px
+}
+
+.portline1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 250px;
+}
+
+.here {
+    text-decoration: underline #e6bd43;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -93,7 +108,7 @@ header nav {
     padding-left: 3rem;
     padding-bottom: 2rem;
     border: 2px solid;
-
+    background-color: #e6bc44;
 }
 
 .comp h2 {
@@ -103,7 +118,7 @@ header nav {
 #comp1 {
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
+    padding-left: 3rem;
     padding-bottom: 3rem;
     padding-right: 3rem;
 }
@@ -121,8 +136,8 @@ header nav {
 .compan1 {
     display: flex;
     flex-direction: column;
-    background-color: gainsboro;
-    opacity: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+    ;
     flex: 1;
     margin: 1rem;
     padding: 1.5rem;
@@ -136,10 +151,10 @@ header nav {
 }
 
 .more1 {
-    border: 3px solid;
     padding: 10px;
     font-weight: bold;
     max-width: fit-content;
+    background-color: #e6bc44;
 }
 
 .service {
@@ -183,7 +198,13 @@ hr {
 
 }
 
-.branding {
+.job:hover {
+    background-color: black;
+    color: #e6bc44;
+    border: black;
+}
+
+#branding {
     padding-top: 1rem;
 }
 
@@ -199,8 +220,20 @@ hr {
     padding-right: 20px;
 }
 
+.imgplace1 img {
+    width: 50%;
+}
+
 .imgplace img {
     width: 100%
+}
+
+.imgplace img:hover {
+    transform: scale(1.1);
+}
+
+.imgplace1 img:hover {
+    transform: scale(1.1);
 }
 
 
@@ -212,8 +245,8 @@ hr {
 }
 
 .client img {
-    width: 15%;
-    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 100px;
 }
 
 #c-top {
@@ -254,7 +287,6 @@ hr {
 
 .btn1 {
     background-color: #e6bc44;
-    display: inline-block;
     padding: 10px;
     margin-top: 15px;
     border: none;
@@ -271,7 +303,6 @@ hr {
     padding: 10px;
     border: none;
     font-weight: bold;
-
 }
 
 .btn2:hover {
@@ -279,9 +310,35 @@ hr {
     background-color: black;
 }
 
+.btn3 {
+    background-color: #e6bc44;
+    display: flex;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn3:hover {
+    color: #e6bc44;
+    background-color: black;
+}
+
 #post {
     text-decoration: underline;
     color: blue;
+}
+
+.fa-location-pin {
+    padding-right: 10px;
+}
+
+.fa-phone {
+    padding-right: 10px;
+}
+
+.fa-envelope {
+    padding-right: 10px;
 }
 
 /* Footer */
@@ -319,6 +376,15 @@ hr {
     width: 100%;
 }
 
+.logo1 img {
+    height: 100px;
+}
+
+.socials i {
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+}
+
 /* Media qurues */
 
 @media only screen and (min-width:600px) {
@@ -329,6 +395,7 @@ hr {
         gap: 1rem;
         list-style: none;
         margin: 0;
+        padding-top: 30px;
     }
 
 
@@ -343,5 +410,39 @@ hr {
 
     .navbar {
         gap: 1rem;
+        padding-right: 2.5rem;
     }
+
+    .navbar li {
+        margin-bottom: 0.5rem;
+    }
+
+    #libtn {
+        margin-top: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width:760px) {
+
+    .comp {
+        flex-direction: column;
+
+    }
+
+    .comp img {
+        padding-right: 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }

@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <title>About</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo"><img src="media/logo1.png" height="75px" alt=""></a>
+            <a href="index.html" class="logo"><img src="media/logo1.png" alt=""></a>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li class="here"><a href="about.html">About</a></li>
+                <li id="libtn"><a class="btn2" href="#c-top">Contact</a></li>
             </ul>
 
         </nav>
@@ -43,18 +47,22 @@
             </section>
             <section class="row">
                 <section>
+                    <i class="fa-solid fa-users fa-2xl" style="color: #000000;"></i>
                     <p class="bold">Branding</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </section>
                 <section>
+                    <i class="fa-solid fa-cloud-arrow-up fa-2xl" style="color: #000000;"></i>
                     <p class="bold">Design</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </section>
                 <section>
+                    <i class="fa-solid fa-code fa-2xl" style="color: #000000;"></i>
                     <p class="bold">Development</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </section>
                 <section>
+                    <i class="fa-solid fa-wifi fa-2xl" style="color: #000000;"></i>
                     <p class="bold">Support</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </section>
@@ -73,20 +81,23 @@
             <section class="contact1">
                 <h3>Send us a message</h3>
                 <p>Name</p>
-                <input type="text" name="" class="in1">
+                <input type="text" name="name" class="in1">
                 <p>Subject</p>
-                <input type="text" name="" class="in1">
+                <input type="text" name="subject" class="in1">
                 <p>Message</p>
-                <input type="text" name="" id="in2">
-                <button class="btn1">Send message</button>
+                <input type="text" name="message" id="in2">
+                <button class="btn3">Send message</button>
             </section>
             <section class="contact2">
                 <h3>Contact information</h3>
                 <p>Aenean hendrerit lectus non magna blandit, ut semper sem sagittis. Mauris odio justo, placerat eget
                     convallis a, pretium ut dui.</p>
-                <p>B R A Veien 4, 1757 Halden</p>
-                <p>4039823</p>
-                <a id="post" href="mailto:">postmottak@hiof.no</a>
+                <p><i class="fa-solid fa-location-pin" style="color: #616161;"></i>B R A Veien 4, 1757 Halden</p>
+
+                <p><i class="fa-solid fa-phone" style="color: #616161;"></i>96 60 80 81</p>
+
+                <a id="post" href="mailto:"> <i class="fa-solid fa-envelope"
+                        style="color: #616161;"></i>postmottak@hiof.no</a>
             </section>
         </section>
         <section>
@@ -100,13 +111,15 @@
     <footer>
         <section class="copyright">
             <section>
-                <a href="index.html" class="logo1"><img src="media/logo1.png" height="100px" alt=""></a>
+                <a href="index.html" class="logo1"><img src="media/logo1.png" alt=""></a>
             </section>
             <section>
                 <p>Company copyright 2023</p>
             </section>
-            <section>
-                <p>facebook instagram linkdin</p>
+            <section class="socials">
+                <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
             </section>
         </section>
 
