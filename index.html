@@ -8,12 +8,12 @@
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
     <title>Home</title>
 </head>
 
 <body>
-    <header>
+    <header class="top">
         <nav>
             <a href="index.html" class="logo"><img src="media/logo1.png" alt=""></a>
             <ul class="navbar">
@@ -27,6 +27,7 @@
     </header>
     <main>
         <section class=" headline">
+            <!--Jeg så på en youtube video for å video i bakgrunnen. https://youtu.be/znqUwx0b0HI?si=blau--nSJITvesSv-->
             <video id="video" autoplay muted loop src="media/mountains.mp4"></video>
             <h1>Compeling headline</h1>
             <p class="lore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut explicabo
@@ -35,7 +36,12 @@
                 Natus, soluta maiores exercitationem tenetur, in praesentium eos minima cupiditate,
                 similique quaerat
                 reiciendis amet facilis animi.</p>
-            <a href="#" class="btn1">Read more about our services</a>
+            <a href="#service1" class="btn1">Read more about our services</a>
+        </section>
+        <section>
+            <a href="#top">
+                <i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff;"></i>
+            </a>
         </section>
         <section class="subhead">
             <h2>Subheading</h2>
@@ -52,10 +58,10 @@
                     illum aliquid cupiditate dolores perspiciatis deserunt laboriosam laudantium beatae
                     modi quia
                     repelle.</p>
-                <a href="#" class="more">Read more about us</a>
+                <a href="about.html" class="more">Read more about us</a>
             </section>
         </section>
-        <section class="service">
+        <section id="service1" class="service">
             <section class="top">
                 <h2>Our Services</h2>
             </section>
@@ -91,7 +97,7 @@
             </section>
             <section>
                 <input class="inputs" type="text">
-                <a href="#" id="btn">Sign Me up</a>
+                <a href="#" id="btn">Sign me up</a>
             </section>
         </section>
         <section class="copyright">
