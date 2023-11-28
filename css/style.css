@@ -65,9 +65,22 @@ header nav {
     object-fit: cover;
 }
 
+#vidimg {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+
 .portline {
     text-align: center;
-    background-image: url('../media/von1.jpg');
+    background-image: url('../media/desk1.jpg');
+    /* 
+    Jeg lærte denne delen av koden fra https://www.w3schools.com/html/html_images_background.asp
+
+    Bildet er tatt fra https://pixabay.com/photos/laptop-mockup-graphics-tablet-2838921/ 
+    */
     background-size: cover;
     height: 250px;
     position: relative;
@@ -140,8 +153,9 @@ header nav {
 
 .compan {
     display: flex;
-    background-image: url(../media/von1.jpg);
-
+    background-image: url(../media/comp.jpg);
+    /* Bildet tatt fra https://pixabay.com/photos/business-computer-mobile-smartphone-2846221/
+    */
 }
 
 .empty {
@@ -283,6 +297,16 @@ hr {
     max-width: 100px;
 }
 
+.client-sub {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.client-sub img {
+    margin: 10px;
+}
+
 #c-top {
     text-align: center;
     background-color: #efefef;
@@ -297,6 +321,8 @@ hr {
 #contacttop {
     display: flex;
     background-color: #efefef;
+    overflow: hidden;
+    padding: 1rem;
 }
 
 .contact1 {
@@ -311,7 +337,8 @@ hr {
 
 .in1 {
     border: none;
-    height: 25px;
+    height: 35px;
+    width: 250px;
 }
 
 #in2 {
@@ -444,6 +471,10 @@ hr {
         padding-top: 30px;
     }
 
+    #vidimg {
+        display: none;
+    }
+
 
 }
 
@@ -471,6 +502,51 @@ hr {
         margin-top: 1rem;
     }
 
+    #video {
+        display: none;
+    }
+
+    .brandimg {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+
+    }
+
+    .imgplace:hover {
+        transform: scale(1.0);
+    }
+
+    .imgplace1 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .imgplace1 img {
+        width: 100%;
+    }
+
+    .imgplace1:hover {
+        transform: scale(1.0);
+    }
+
+    .empty {
+        flex: 0;
+    }
+
+    .compan {
+        padding: 3rem;
+    }
+
+    #contacttop {
+        flex-direction: column;
+    }
+
+    .in1 {
+        width: 370px;
+
+
+    }
 
 }
 
