@@ -1,5 +1,6 @@
 body {
     font-family: "Open sans", sans-serif;
+    max-width: 1600px;
 }
 
 header,
@@ -255,6 +256,7 @@ hr {
 
 .brandimg {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .imgplace {
@@ -264,25 +266,40 @@ hr {
     flex-direction: column;
     padding-right: 20px;
     font-weight: bold;
+    max-width: 350px;
+    min-width: 200px;
+    transition: 3s;
+}
+
+/* Lærte om transition fra https://thoughtbot.com/blog/transitions-and-transforms
+
+*/
+
+.imgplace1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    min-width: 200px;
 }
 
 .imgplace1 img {
-    width: 50%;
+    flex: 1;
+    transition: 3s;
 }
 
-.imgplace img {
-    width: 100%
-}
 
-/* Lærte det om "hover" fra https://www.educative.io/answers/how-to-enlarge-an-image-on-hover-in-html*/
+
+/* Lærte det om "hover" fra https://www.educative.io/answers/how-to-enlarge-an-image-on-hover-in-html
+*/
 
 .imgplace:hover {
     transform: scale(1.1);
 }
 
-.imgplace1:hover {
+.imgplace1 img:hover {
     transform: scale(1.1);
 }
+
 
 
 .client {
@@ -475,6 +492,21 @@ hr {
         display: none;
     }
 
+
+}
+
+@media only screen and (max-width:1135px) {
+
+    .imgplace {
+        margin: auto;
+
+    }
+
+    .imgplace1 {
+        margin: auto;
+        padding-right: 20px;
+
+    }
 
 }
 

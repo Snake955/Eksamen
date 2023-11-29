@@ -9,28 +9,34 @@
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+
+    <meta property="og:description" content="Website for an upcoming business">
+    <meta property="og:type" content="website">
+
     <title>Home</title>
 </head>
 
 <body>
     <header class="top">
         <nav>
-            <a href="index.html" class="logo"><img src="media/logo1.png" alt=""></a>
+            <a href="index.html" itemprop="logo" class="logo"><img src="media/logo1.png" alt="logo"></a>
             <ul class="navbar">
                 <li class="here"><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="products.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li id="libtn"><a class="btn2" href="about.html#c-top">Contact</a></li>
             </ul>
         </nav>
 
     </header>
-    <main>
+    <main itemscope itemtype="https://schema.org/Organization">
         <section class=" headline">
-            <!--Jeg så på en youtube video for å video i bakgrunnen. https://youtu.be/znqUwx0b0HI?si=blau--nSJITvesSv-->
-            <video id="video" autoplay muted loop src="media/mountains.mp4"></video>
-            <img id="vidimg" src="media/desk.jpg" alt="">
-            <!--Bildet er tatt fra https://pixabay.com/photos/desk-laptop-notebook-pen-workspace-593327/-->
+            <!--Jeg så på en youtube video for å video i bakgrunnen. https://youtu.be/znqUwx0b0HI?si=blau--nSJITvesSv
+            -->
+            <video itemprop="video" id="video" autoplay muted loop src="media/mountains.mp4"></video>
+            <img itemprop="image" id="vidimg" src="media/desk.jpg" alt="">
+            <!--Bildet er tatt fra https://pixabay.com/photos/desk-laptop-notebook-pen-workspace-593327/
+            -->
             <h1>Compeling headline</h1>
             <p class="lore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut explicabo
                 excepturi
@@ -45,15 +51,15 @@
                 <i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff;"></i>
             </a>
         </section>
-        <section class="subhead">
+        <article class="subhead">
             <h2>Subheading</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui commodi, molestiae
                 ipsum aliquid libero
                 minima repellat facere, impedit asperiores repudiandae hic es.</p>
-        </section>
+        </article>
         <section class="comp">
-            <img src="https://placehold.co/400x400" alt="">
-            <section id="comp1">
+            <img src="https://placehold.co/400x400" alt="placeholder picture">
+            <article id="comp1">
                 <h2>Our company</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat autem, aperiam
                     architecto odio quam
@@ -61,10 +67,10 @@
                     modi quia
                     repelle.</p>
                 <a href="about.html" class="more">Read more about us</a>
-            </section>
+            </article>
         </section>
         <section id="service1" class="service">
-            <section class="top">
+            <section itemprop="makesOffer" class="top">
                 <h2>Our Services</h2>
             </section>
             <section class="row">
@@ -104,15 +110,21 @@
         </section>
         <section class="copyright">
             <section>
-                <a href="index.html" id="logo1"><img src="media/logo1.png" alt=""></a>
+                <a href="index.html" class="logo1"><img src="media/logo1.png" alt="logo"></a>
             </section>
-            <section>
+            <section itemprop="copyrightHolder">
                 <p>Company copyright 2023</p>
             </section>
             <section class="socials">
-                <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i>
+                </a>
+                <a href="http://www.instagram.com/">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                </a>
             </section>
         </section>
 
