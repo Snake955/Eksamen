@@ -257,10 +257,12 @@ hr {
 .brandimg {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .imgplace {
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     padding-top: 1rem;
     flex-direction: column;
@@ -269,6 +271,7 @@ hr {
     max-width: 350px;
     min-width: 200px;
     transition: 3s;
+    margin: auto;
 }
 
 /* Lærte om transition fra https://thoughtbot.com/blog/transitions-and-transforms
@@ -280,9 +283,11 @@ hr {
     flex-direction: column;
     max-width: 350px;
     min-width: 200px;
+    margin-left: 60px;
 }
 
 .imgplace1 img {
+    width: 500px;
     flex: 1;
     transition: 3s;
 }
@@ -492,19 +497,21 @@ hr {
         display: none;
     }
 
+    .imgplace1 {}
+
 
 }
 
 @media only screen and (max-width:1135px) {
 
-    .imgplace {
-        margin: auto;
-
-    }
 
     .imgplace1 {
         margin: auto;
         padding-right: 20px;
+    }
+
+    .imgplace1 img {
+        width: 350px;
 
     }
 
